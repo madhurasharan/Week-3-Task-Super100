@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ day }}'s Task</title>
+    <style>
+        body { font-family: Arial, sans-serif; 
+               padding: 20px; 
+            }
+        h1 { color: #222; }
+        a { color: darkblue; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <h1>{{ task }}</h1>
+    <a href="{% url 'index' %}">← Back to  days</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weekly Tasks</title>
+    <style>
+        body { font-family: Arial, sans-serif; 
+               padding: 20px;
+              background-color: rgb(176, 198, 243); }
+        h1 { color: #444;
+             font-family: 'Times New Roman', Times, serif;
+             color: darkblue; 
+            }
+        a { display: block; margin: 10px 0; font-size: 1.2em; color: darkblue; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Days Of Week</h1>
+    {% for day in days %}
+        <a href="{% url 'task_view' day %}">{{ day|capfirst }}</a>
+    {% endfor %}
+</body>
+</html>
